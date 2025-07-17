@@ -6,6 +6,7 @@
   <meta name="description" content="XRLab.dev | Realidad Aumentada, Realidad Virtual y Desarrollo de Experiencias Interactivas"/>
   <title>XRLab.dev</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body class="bg-gray-950 text-white font-sans flex flex-col min-h-screen">
 
@@ -17,7 +18,7 @@
 
   <!-- Main content -->
   <main class="flex-1 px-6 py-12 max-w-4xl mx-auto">
-    
+
     <!-- Quiénes somos -->
     <section class="mb-12">
       <h2 class="text-2xl font-semibold mb-4 text-indigo-400">¿Quiénes somos?</h2>
@@ -39,33 +40,21 @@
       </ul>
     </section>
 
-    <!-- Imágenes -->
+    <!-- Slider -->
     <section class="mb-12">
       <h2 class="text-2xl font-semibold mb-4 text-indigo-400">Explora nuestras experiencias</h2>
 
-      <div class="space-y-10">
-        <!-- Imagen 1 -->
-        <div>
-          <img src="images/vrheadset00.jpg" alt="Usuario con visor VR" class="rounded-xl shadow-lg w-full object-cover max-h-[400px]" loading="lazy" />
-          <p class="text-sm text-gray-500 mt-2">
-            Foto de 
-            <a href="https://unsplash.com/@jamesyarema?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" class="underline hover:text-indigo-300">James Yarema</a> 
-            en 
-            <a href="https://unsplash.com/photos/npTT9rD8wd4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" class="underline hover:text-indigo-300">Unsplash</a>
-          </p>
-        </div>
-
-        <!-- Imagen 2 -->
-        <div>
-          <img src="images/vrheadset01.jpg" alt="Instalación AR en evento" class="rounded-xl shadow-lg w-full object-cover max-h-[400px]" loading="lazy" />
-          <p class="text-sm text-gray-500 mt-2">
-            Foto de 
-            <a href="https://unsplash.com/@ottonbro?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" class="underline hover:text-indigo-300">Ottobro</a> 
-            en 
-            <a href="https://unsplash.com/photos/xyz123?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" class="underline hover:text-indigo-300">Unsplash</a>
-          </p>
-        </div>
+      <div class="slider-wrapper mb-4">
+        <img src="images/vrheadset00.jpg" alt="Visor de realidad virtual" class="slider-image" loading="lazy" />
+        <img src="images/vrheadset01.jpg" alt="Experiencia inmersiva AR/VR" class="slider-image" loading="lazy" />
       </div>
+
+      <p class="text-sm text-gray-500 mt-2">
+        Fotos de 
+        <a href="https://unsplash.com/@jamesyarema?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" class="underline hover:text-indigo-300">James Yarema</a> 
+        en 
+        <a href="https://unsplash.com/?utm_source=creditCopyText&utm_medium=referral" class="underline hover:text-indigo-300">Unsplash</a>
+      </p>
     </section>
 
     <!-- Contacto -->
