@@ -142,3 +142,29 @@ footer {
   color: #cccccc;
   border-top: 1px solid #1c3a5a;
 }
+
+@media (max-width: 600px) {
+  .carousel-container {
+    height: 220px;
+    perspective: none;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .carousel-slide {
+    position: relative;
+    width: 220px;
+    height: 220px;
+    opacity: 1 !important;
+    transform: none !important;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    margin: 0 10px;
+    cursor: default;
+  }
+  
+  /* Mostrar solo la imagen activa, ocultar las demás */
+  .carousel-slide:not(.active) {
+    display: none;
+  }
+}
