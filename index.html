@@ -2,98 +2,74 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="XRLab.dev | Realidad Aumentada, Realidad Virtual y Desarrollo de Experiencias Interactivas" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>XRLab.dev</title>
-  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body class="bg-gray-950 text-white flex flex-col min-h-screen">
+<body>
 
-  <!-- Banner slideshow -->
-  <header>
-    <div class="slider-wrapper">
-      <img src="images/banner00.jpg" alt="Banner XRLab 00" class="slider-image active" loading="lazy" />
-      <img src="images/banner01.jpg" alt="Banner XRLab 01" class="slider-image" loading="lazy" />
-      <img src="images/banner02.jpg" alt="Banner XRLab 02" class="slider-image" loading="lazy" />
+<header>
+  <div class="banner-container">
+    <img src="images/banner00.jpg" class="banner-image active" />
+    <img src="images/banner01.jpg" class="banner-image" />
+    <img src="images/banner02.jpg" class="banner-image" />
+    <div class="banner-text">
+      <h1>XRLab.dev</h1>
+      <p>Experiencias inmersivas y desarrollo interactivo</p>
     </div>
-    <div class="content">
-      <h1 class="text-4xl md:text-5xl font-bold">XRLab.dev</h1>
-      <p class="mt-2 text-xl">Experiencias inmersivas y desarrollo interactivo</p>
+  </div>
+</header>
+
+<main>
+  <section>
+    <h2>¿Quiénes somos?</h2>
+    <p>
+      En XRLab.dev nos especializamos en el desarrollo de soluciones interactivas con tecnologías como Realidad Aumentada (AR), Realidad Virtual (VR), aplicaciones móviles y experiencias gamificadas. Trabajamos con empresas que buscan innovar en eventos, marketing y entretenimiento.
+    </p>
+  </section>
+
+  <section>
+    <h2>Explora nuestras experiencias</h2>
+    <div class="carousel-container">
+      <div class="carousel-slide active" style="background-image: url('images/mid00.jpg');"></div>
+      <div class="carousel-slide" style="background-image: url('images/mid01.jpg');"></div>
+      <div class="carousel-slide" style="background-image: url('images/mid02.jpg');"></div>
+      <div class="carousel-slide" style="background-image: url('images/mid03.jpg');"></div>
+      <div class="carousel-slide" style="background-image: url('images/mid04.jpg');"></div>
     </div>
-  </header>
+  </section>
 
-  <!-- Main -->
-  <main class="flex-1 px-6 py-12 max-w-4xl mx-auto">
+  <section>
+    <h2>Servicios</h2>
+    <ul>
+      <li>Desarrollo de experiencias AR/VR (Unity, WebAR, Quest)</li>
+      <li>Minijuegos interactivos para eventos (2D/3D, touch y kioskos)</li>
+      <li>Aplicaciones personalizadas para marketing experiencial</li>
+      <li>Prototipos rápidos y demos para ferias o activaciones</li>
+    </ul>
+  </section>
 
-    <!-- Quiénes somos -->
-    <section class="mb-12">
-      <h2 class="text-2xl font-semibold mb-4 text-indigo-400">¿Quiénes somos?</h2>
-      <p class="text-gray-300 leading-relaxed">
-        En <strong>XRLab.dev</strong> nos especializamos en el desarrollo de soluciones interactivas con tecnologías como
-        <strong>Realidad Aumentada (AR)</strong>, <strong>Realidad Virtual (VR)</strong>, aplicaciones móviles y experiencias gamificadas.
-        Trabajamos con empresas que buscan innovar en eventos, marketing y entretenimiento.
-      </p>
-    </section>
+  <section>
+    <h2>Contacto</h2>
+    <p>Escríbenos a: contacto@xrlab.dev</p>
+  </section>
+</main>
 
-    <!-- Carousel central slideshow -->
-    <section class="mb-12">
-      <h2 class="text-2xl font-semibold mb-4 text-indigo-400">Explora nuestras experiencias</h2>
+<footer>
+  &copy; 2025 XRLab.dev - Todos los derechos reservados
+</footer>
 
-      <div class="slider-wrapper">
-        <img src="images/mid00.jpg" alt="Experiencia 0" class="slider-image active" loading="lazy" />
-        <img src="images/mid01.jpg" alt="Experiencia 1" class="slider-image" loading="lazy" />
-        <img src="images/mid02.jpg" alt="Experiencia 2" class="slider-image" loading="lazy" />
-        <img src="images/mid03.jpg" alt="Experiencia 3" class="slider-image" loading="lazy" />
-        <img src="images/mid04.jpg" alt="Experiencia 4" class="slider-image" loading="lazy" />
-      </div>
-
-    </section>
-
-    <!-- Servicios -->
-    <section class="mb-12">
-      <h2 class="text-2xl font-semibold mb-4 text-indigo-400">Servicios</h2>
-      <ul class="list-disc list-inside text-gray-300 space-y-2">
-        <li>Desarrollo de experiencias AR/VR (Unity, WebAR, Quest)</li>
-        <li>Minijuegos interactivos para eventos (2D/3D, touch y kioskos)</li>
-        <li>Aplicaciones personalizadas para marketing experiencial</li>
-        <li>Prototipos rápidos y demos para ferias o activaciones</li>
-      </ul>
-    </section>
-
-    <!-- Contacto -->
-    <section>
-      <h2 class="text-2xl font-semibold mb-4 text-indigo-400">Contacto</h2>
-      <p class="text-gray-300">¿Tienes una idea o proyecto? Escríbenos a:</p>
-      <p class="mt-2 text-lg font-medium text-indigo-300">
-        <a href="mailto:info@xrlab.dev" class="underline">info@xrlab.dev</a>
-      </p>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer class="p-4 text-center bg-gray-900 text-sm text-gray-500">
-    &copy; XRLab.dev 2025. Todos los derechos reservados.
-  </footer>
-
-  <!-- Slideshow JS -->
-  <script>
-    function setupSlideshow(selector, interval = 4000) {
-      const container = document.querySelector(selector);
-      if (!container) return;
-      const images = container.querySelectorAll('.slider-image');
-      let current = 0;
-
-      setInterval(() => {
-        images[current].classList.remove('active');
-        current = (current + 1) % images.length;
-        images[current].classList.add('active');
-      }, interval);
-    }
-
-    setupSlideshow('header .slider-wrapper', 5000); // Banner cambia cada 5 segundos
-    setupSlideshow('main .slider-wrapper', 4000);   // Carousel cambia cada 4 segundos
-  </script>
+<script src="carousel.js"></script>
+<script>
+  // Banner slideshow
+  const banners = document.querySelectorAll('.banner-image');
+  let current = 0;
+  setInterval(() => {
+    banners[current].classList.remove('active');
+    current = (current + 1) % banners.length;
+    banners[current].classList.add('active');
+  }, 5000);
+</script>
 
 </body>
 </html>
