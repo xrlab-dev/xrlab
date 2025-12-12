@@ -819,6 +819,44 @@ input[type="radio"]+label:before {
 	width: 100%;
 }
 
+.project-item {
+	margin-bottom: 2.5rem;
+}
+
+.project-video {
+	width: 100%;
+	max-width: 100%;
+	border-radius: 6px;
+	overflow: hidden;
+}
+
+.project-video video {
+	width: 100%;
+	height: auto;
+	display: block;
+	object-fit: contain;
+	background: #000;
+}
+
+.project-video.vertical video {
+	width: 50%;
+	margin: 0 auto;
+	display: block;
+}
+
+.project-video.square video {
+	width: 80%;
+	margin: 0 auto;
+	display: block;
+}
+
+.project-video.wide video {
+	width: 85%;
+	margin: 0 auto;
+	display: block;
+}
+
+
 @media screen and (max-width: 736px) {
 
 	.image.main {
