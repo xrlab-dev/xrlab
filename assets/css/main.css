@@ -819,6 +819,25 @@ input[type="radio"]+label:before {
 	width: 100%;
 }
 
+.image.main.banner {
+	height: 260px;
+	overflow: hidden;
+	border-radius: 6px;
+}
+
+.image.main.banner img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center top;
+}
+
+.image.main.banner.banner-center img {
+	width: 100%;
+	height: 100%;
+	object-position: center;
+}
+
 .project-item {
 	margin-bottom: 2.5rem;
 }
